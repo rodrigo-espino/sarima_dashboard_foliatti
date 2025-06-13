@@ -36,7 +36,7 @@ def sarima_forecast(from_date, to_date):
 
         # Fit SARIMA model
         sarima_model = SARIMAX(
-            df['Amount'],
+            df['amount'],
             order=(1, 1, 1),
             seasonal_order=(1, 1, 1, 30),
             enforce_stationarity=False,
